@@ -13,10 +13,16 @@ public class OperadorE {
 		senha = leitor.next();	
 		//Aqui é preciso criar um if que verifique as duas condições para o login ser bem sucedido
 		
+		//.equals é usado para comparar texto
 		
+		// && corresponde ao AND ou E
+		
+		if(usuario.equalsIgnoreCase("administrador") && senha.equals("123")) {
+		System.out.println("Usuário logado");
+		} else {
+			System.out.println("Usuário ou senha incorretos");
+			}
 		
 		leitor.close();
-
 	}
-
 }
